@@ -10,7 +10,7 @@ import DoughnutContainer from "../graphs/DoughnutContainer";
 import { useRouter } from "next/router";
 import { isExcludedFromThesePages } from "../../lib/utils";
 
-export default ({ children }) => {
+const Layout = ({ children }) => {
   const { data } = useQuery(GET_DASHNAV_STATE);
   const router = useRouter();
   const pagesToExclude = [
@@ -46,3 +46,5 @@ export default ({ children }) => {
     </div>
   );
 };
+
+export default Layout;

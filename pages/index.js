@@ -31,12 +31,14 @@ const Home = () => {
               Connect with friends, earn badges and crush your goals
             </p>
             <button
+              aria-label="Sign up"
               className="bg-blue-400 rounded text-white py-3 w-full hover:item-hover mb-8"
               onClick={() => router.push("/api/login")}
             >
               Sign Up
             </button>
             <button
+              aria-label="Sign In"
               className="border border-blue-400 rounded text-blue-400 py-3 w-full"
               onClick={() => router.push("/api/login")}
             >
