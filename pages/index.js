@@ -5,7 +5,7 @@ import Layout from "../components/Layout/index";
 import SplashSVG from "../components/svg/SplashSVG";
 import { CenteredContainer } from "../components/Layout/LayoutPrimitives";
 import { useRouter } from "next/router";
-import withApollo from "../lib/apollo";
+import { withApollo } from "../lib/withApollo";
 
 const Home = () => {
   const router = useRouter();
@@ -54,4 +54,4 @@ const Home = () => {
   );
 };
 
-export default withApollo(Home);
+export default withApollo()(Home);

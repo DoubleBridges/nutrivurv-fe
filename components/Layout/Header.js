@@ -4,7 +4,7 @@ import cookies from "js-cookie";
 import { Spacer } from "./LayoutPrimitives";
 import DashNav from "./DashNav";
 import { removeCookies, isExcludedFromThesePages } from "../../lib/utils";
-import { useFetchUser } from "../../lib/Auth0/user.js";
+import { useFetchUser } from "../../lib/user.js";
 
 const Header = () => {
   const router = useRouter();
